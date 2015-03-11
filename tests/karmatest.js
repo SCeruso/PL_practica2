@@ -13,19 +13,19 @@ suite('csv', function() {
 		original.value = '2, 4, "hola"';
 		calculate();
 		
-		assert.deepEqual(finaltable.children[0].children[0].children[0].children[0].children[0].childNodes[0].data, "2");
+		assert.deepEqual(finaltable.children[1].children[0].children[0].children[0].innerHTML, "2");
 	});
 	
 	test('2, 4, "hola"', function() {
 		original.value = '2, 4, "hola"';
 		calculate();
-		 assert.deepEqual(finaltable.children[0].children[0].children[0].children[0].children[1].childNodes[0].data, " 4");
+		assert.deepEqual(finaltable.children[1].children[0].children[0].children[1].innerHTML, " 4");
 	});
 
 	test('2, 4, "hola"', function() {
 		original.value = '2, 4, "hola"';
 		calculate();
-		 assert.deepEqual(finaltable.children[0].children[0].children[0].children[0].children[2].childNodes[0].data, "hola");
+		assert.deepEqual(finaltable.children[1].children[0].children[0].children[2].innerHTML, "hola");
 	});
 	
 	

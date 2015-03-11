@@ -15,13 +15,14 @@ th, td        { vertical-align: top; text-align: right; }
 #finaltable tr:hover{ background-color: blue; } 
 tr:nth-child(odd)   { background-color:#eee; }
 tr:nth-child(even)    { background-color:#00FF66; }
+
 input        { text-align: right;  border: none;       }     /* Align input to the right  */
-textarea     { border: outset; border-color: white;       }                        
+textarea     { border: outset; border-color: blue;       }                        
 table        { border: inset; border-color: white; }
 table.center { margin-left:auto; margin-right:auto; }
-#result      { border-color: red; }
+#result      { border-color: black; }
 tr.error       { background-color: red; }
 body
 {
- background-color:#b0c4de;  /* blue */
+ background-color:#b9b7b7;  /* blue */
 }

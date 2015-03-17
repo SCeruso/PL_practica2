@@ -1,44 +1,100 @@
 ﻿<html>
   <head>
-     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-     <title>CSV Analyzer</title>
-     <link href="global.css" rel="stylesheet" type="text/css">
-
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-     <script type="text/javascript" src="csv.js"></script>
-     <script type="text/html" id="tableTemplate"> 
-	<p>
-		<table class="center" id="result">
-            <% _.each(rows, function(row) { %>
-                <tr class="<%=row.type%>">
-                    <% _.each(row.items, function(name) { %>
-                    <td><%= name %></td>
-                    <% }); %>
-                </tr>
-            <% }); %>
-		</table>
-	</p>
- 
-	</script>
-</head>
+    <title>CSV Analyzer</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="csv.js"></script>
+    <script type="text/html" id="tableTemplate"> 
+      <p>
+		    <table class="center" id="result">
+          <% _.each(rows, function(row) { %>
+            <tr class="<%=row.type%>">
+              <% _.each(row.items, function(name) { %>
+                  <td><%= name %></td>
+              <% }); %>
+            </tr>
+          <% }); %>
+		    </table>
+	    </p>
+	  </script>
+    <style type="text/css">
+      a{text-decoration:none;}
+      a:link{color:white;}
+      a:visited{color:white;}
+      a:hover{font-size:16; color:#0B0B61;}
+    </style>
+  </head>
   <body>
-    <h1>Comma Separated Value Analyzer</h1>
-      <div align="center">
-          <i>Write a CSV string. Click the table button. The program outputs a table with the specified data.</i>
-
-          <h2>CSV string: </h2>
+    <div class="menu">
+      <dl>
+        <dt><b><a href="https://kevinrm.github.io/index.html">Inicio: Página Kevin</a></b></dt>
+        <dt><b><a href="/index.html">Inicio: Página Sabato</a></b></dt>
+      </dl>
+    </div>
+    <div class="contenido_total">
+      <div class="titulo_practica">
+        <h1 align=center><font color="white">Comma Separated Values (CSV) Analyzer with Ajax</font></h1>
+        <hr>
       </div>
-      <div id="area" align="center">
-        
-       
-        <textarea autofocus cols = "80" rows = "5" id="original"></textarea> 
-           
+      <div class="contenido">
+        <table>
+          <tr>
+            <th>Cadena CSV:</th>
+            <td><textarea autofocus cols = "40" rows = "5" id="original"></textarea></td> 
+          </tr>
+        </table>
+        <div class="boton_tabla">
+          <button type="button">Tabla</button><br>
+        </div>
+        <div class="texto_resultado">
+          <p>
+            <b>
+              Resultado:
+            </b>
+          </p>
+        </div>
+        <span class="output" id="finaltable"></span>
+      </div>
+      <div class="bot">
+        <div class="enlaces">
+          <div class="enlace_tests">
+            <p><b>
+              <a href="tests/index.html"><button type="button" class="btn btn-primary"><strong>Tests</strong></button></a>
+            </b></p>
           </div>
-      <div id="buttons" align="center">
-          <button type="button">table:</button>
-          <button type="button" onclick="window.location.href='http://alu0100764666.github.io/PL_practica2/tests/index.html'">Tests</button><br>
+          <div class="enlace_travis">
+            <p><b>
+              <a href="https://travis-ci.org/alu0100764666/PL_practica2"><button type="button" class="btn btn-primary"><strong>Travis</strong></button></a>
+            </b></p>
+          </div>
+          <div class="enlace_jquery">
+            <p><b>
+              <a href="http://jquery.com/"><button type="button" class="btn btn-primary"><strong>jQuery</strong></button></a>
+            </b></p>
+          </div>
+          <div class="enlace_github">
+            <p><b>
+              <a href="https://github.com/alu0100764666/PL_practica2"><button type="button" class="btn btn-primary">Ver en <strong>GitHub</strong></button></a>
+            </b></p>
+          </div>
+        </div>
+        <div class="descripcion">
+          <fieldset>
+            <p>
+              <legend>
+                <u>
+                  <i>
+                    <b>AYUDA:</b>
+                  </i>
+                </u>
+              </legend>
+                Escriba una cadena CSV, luego haga Click en el botón de "Tabla". El programa le dará una tabla como salida con los datos introducidos.
+            </p>
+          </fieldset>
+        </div>
       </div>
-    <span class="output" id="finaltable"></span>
+    </div>
   </body>
 </html>

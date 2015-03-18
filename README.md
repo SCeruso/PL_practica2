@@ -4,6 +4,7 @@
 - Con el botón test se irá a los test del analizador.
 - En la rama gh-pages encontrará una versión sin AJAX
 - En la rama master encontrará una versión utilizando AJAX.
+
 # Travis --> [enlace](https://travis-ci.org/alu0100764666/PL_practica2)
 [![Build Status](https://travis-ci.org/alu0100764666/PL_practica2.svg)](https://travis-ci.org/alu0100764666/PL_practica2)
 

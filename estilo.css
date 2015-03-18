@@ -65,7 +65,7 @@ body{
   color:white;
 }
 .boton_tabla{
-  text-align: center;
+  text-align: left;
   margin-top:20px;
   margin-bottom:30px;
 }
@@ -86,7 +86,4 @@ table.center {
 }
 .error td{ 
 	background-color: #B40404; 
-}
-.texto_resultado p{
-	float:left;
 }

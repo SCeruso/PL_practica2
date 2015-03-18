@@ -1,12 +1,14 @@
-# Práctica 2: [Comma separated values (CSV) con Ajax](http://alu0100764666.github.io/PL_practica2/)
+# Práctica 2: [Comma separated values (CSV)](http://alu0100764666.github.io/PL_practica2/)
 
 - Analizador de cadenas csv. Introduzca una cadena en formato csv y pulse el botón para generar una tabla con los valores de la cadena csv. 
 - Con el botón test se irá a los test del analizador.
-
+- En la rama gh-pages encontrará una versión sin AJAX
+- En la rama master encontrará una versión utilizando AJAX.
 # Travis --> [enlace](https://travis-ci.org/alu0100764666/PL_practica2)
 [![Build Status](https://travis-ci.org/alu0100764666/PL_practica2.svg)](https://travis-ci.org/alu0100764666/PL_practica2)
 
-# Heroku /*Falta añadir enlace*/
+# Heroku 
+https://analizador-csv.herokuapp.com/
 
 # Participantes 
 - Sabato Ceruso
